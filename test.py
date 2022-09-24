@@ -1,7 +1,7 @@
-import requests
+import requests #The request module allows you to send HTTP requests using Python
 from requests import get
 
-ip = get('https://api64.ipify.org').text
+ip = get('https://api64.ipify.org').text #variable ip will determine the current user's public ip address
 
 response = requests.get("https://geo.ipify.org/api/v2/country,city?apiKey=at_aKdQtFtfKSTzTC44OmrcH6pvEChz8&ipAddress=" + ip).json()
 print("\n=============================================================")
