@@ -43,4 +43,5 @@ if user == 'B':
     print("Domain: " + str(response['as']['domain']))
     print("Type: " + str(response['as']['type']))
     print("=============================================================")
-
+else: 
+    print("Choose A and B only!")
